@@ -30,6 +30,8 @@ export function PropertyCard({ p }: { p: PropertyLite }) {
     <Link
       to="/propiedades/$id"
       params={{ id: p.id }}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group flex flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">

@@ -13,7 +13,7 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/propiedades/$id")({
   head: () => ({
     meta: [
-      { title: "Detalle de propiedad — Andina Propiedades" },
+      { title: "Detalle de propiedad — Calio & Co" },
       { name: "description", content: "Información completa de la propiedad: fotos, características, ubicación y precio." },
     ],
   }),

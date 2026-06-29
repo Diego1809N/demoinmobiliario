@@ -8,9 +8,9 @@ import { Award, Users, Target, Sparkles } from "lucide-react";
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
     meta: [
-      { title: "Nosotros — Andina Propiedades" },
-      { name: "description", content: "Conocé el equipo detrás de Andina Propiedades, inmobiliaria con sede en Salta capital." },
-      { property: "og:title", content: "Sobre Andina Propiedades" },
+      { title: "Nosotros — Calio & Co" },
+      { name: "description", content: "Conocé el equipo detrás de Calio & Co, inmobiliaria con sede en Salta capital." },
+      { property: "og:title", content: "Sobre Calio & Co" },
       { property: "og:description", content: "Experiencia, transparencia y compromiso con cada cliente en el NOA." },
     ],
   }),
@@ -26,13 +26,13 @@ export const Route = createFileRoute("/nosotros")({
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-20 grid gap-12 lg:grid-cols-2 items-center">
         <img
           src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1200&q=70"
-          alt="Equipo de Andina Propiedades"
+          alt="Equipo de Calio & Co"
           className="rounded-3xl object-cover w-full h-full max-h-[520px]"
         />
         <div>
           <h2 className="font-serif text-3xl sm:text-4xl font-medium">Nuestra historia</h2>
           <p className="mt-4 text-muted-foreground">
-            Andina Propiedades nació para profesionalizar el mercado inmobiliario en el NOA, con un servicio cercano, transparente y orientado a resultados. Hoy somos referentes en Salta por la confianza de cientos de familias e inversores.
+            Calio & Co nació para profesionalizar el mercado inmobiliario en el NOA, con un servicio cercano, transparente y orientado a resultados. Hoy somos referentes en Salta por la confianza de cientos de familias e inversores.
           </p>
           <div className="mt-8 grid grid-cols-2 gap-4">
             {[

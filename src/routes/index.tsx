@@ -13,9 +13,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Andina Propiedades — Inmobiliaria en Salta" },
+      { title: "Calio & Co — Inmobiliaria en Salta" },
       { name: "description", content: "Compra, venta y alquiler de propiedades en Salta. Casas, departamentos, terrenos y locales en el NOA argentino." },
-      { property: "og:title", content: "Andina Propiedades" },
+      { property: "og:title", content: "Calio & Co" },
       { property: "og:description", content: "Propiedades seleccionadas en Salta capital y alrededores." },
     ],
   }),

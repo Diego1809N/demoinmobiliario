@@ -11,9 +11,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto — Andina Propiedades" },
+      { title: "Contacto — Calio & Co" },
       { name: "description", content: "Escribinos para tasaciones, ventas, alquileres o consultas generales en Salta. Te respondemos a la brevedad." },
-      { property: "og:title", content: "Contacto — Andina Propiedades" },
+      { property: "og:title", content: "Contacto — Calio & Co" },
       { property: "og:description", content: "Estamos a un mensaje de distancia. Tasaciones sin cargo." },
     ],
   }),

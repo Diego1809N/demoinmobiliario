@@ -34,7 +34,7 @@ export const Route = createFileRoute("/propiedades/")({
   },
   head: () => ({
     meta: [
-      { title: "Propiedades — Andina Propiedades" },
+      { title: "Propiedades — Calio & Co" },
       { name: "description", content: "Explorá casas, departamentos, terrenos y locales en venta y alquiler en Salta." },
       { property: "og:title", content: "Propiedades en Salta — Andina" },
       { property: "og:description", content: "Filtrá por operación, tipo, ubicación y precio." },

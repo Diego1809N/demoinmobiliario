@@ -52,7 +52,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Calio & Co — Inmobiliaria en Salta" },
       { name: "description", content: "Inmobiliaria en Salta capital. Compra, venta y alquiler de casas, departamentos, terrenos y locales en el NOA argentino." },
-      { name: "author", content: "Andina Propiedades" },
+      { name: "author", content: "Calio & Co" },
       { property: "og:title", content: "Calio & Co — Inmobiliaria en Salta" },
       { property: "og:description", content: "Inmobiliaria en Salta capital. Compra, venta y alquiler de casas, departamentos, terrenos y locales en el NOA argentino." },
       { property: "og:type", content: "website" },

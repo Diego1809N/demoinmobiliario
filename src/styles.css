@@ -132,3 +132,6 @@
   }
   .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
 }
+#lovable-badge {
+  display: none !important;
+}

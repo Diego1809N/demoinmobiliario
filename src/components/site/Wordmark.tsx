@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logo-inmobiliario.png.asset.json";
+import logoAsset from "@/assets/calio-logo.png.asset.json";
 
 interface WordmarkProps {
   className?: string;

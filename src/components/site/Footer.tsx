@@ -39,7 +39,7 @@ export function Footer() {
       </div>
       <div className="border-t">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} Andina Propiedades — sitio de prueba. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Calio & Co — sitio de prueba. Todos los derechos reservados.</p>
           <Link to="/auth" className="hover:text-ink">Acceso administradores</Link>
         </div>
       </div>

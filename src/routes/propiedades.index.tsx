@@ -47,7 +47,7 @@ const types = ["Casa", "Departamento", "PH", "Finca", "Terreno", "Local comercia
 
 function PropertiesPage() {
   const search = Route.useSearch();
-  const navigate = useNavigate({ from: "/propiedades" });
+  const navigate = useNavigate();
   const currency: Currency = search.currency ?? "USD";
   const priceCol = currency === "ARS" ? "price_ars" : "price_usd";
 

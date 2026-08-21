@@ -34,9 +34,9 @@ export const Route = createFileRoute("/propiedades/")({
   },
   head: () => ({
     meta: [
-      { title: "Propiedades — Calio & Co" },
+      { title: "Propiedades — Silvia Jaramillo Negocios Inmobiliarios" },
       { name: "description", content: "Explorá casas, departamentos, terrenos y locales en venta y alquiler en Salta." },
-      { property: "og:title", content: "Propiedades en Salta — Andina" },
+      { property: "og:title", content: "Propiedades en Salta — Silvia Jaramillo" },
       { property: "og:description", content: "Filtrá por operación, tipo, ubicación y precio." },
     ],
   }),
@@ -47,7 +47,7 @@ const types = ["Casa", "Departamento", "PH", "Finca", "Terreno", "Local comercia
 
 function PropertiesPage() {
   const search = Route.useSearch();
-  const navigate = useNavigate({ from: "/propiedades" });
+  const navigate = useNavigate();
   const currency: Currency = search.currency ?? "USD";
   const priceCol = currency === "ARS" ? "price_ars" : "price_usd";
 
@@ -70,7 +70,8 @@ function PropertiesPage() {
     },
   });
 
-  const set = (patch: Record<string, any>) => navigate({ search: (prev: any) => ({ ...prev, ...patch }) });
+  const set = (patch: Record<string, any>) =>
+    navigate({ to: "/propiedades", search: ((prev: any) => ({ ...prev, ...patch })) as any });
 
   return (
     <div className="min-h-screen flex flex-col">

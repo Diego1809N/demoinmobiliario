@@ -13,10 +13,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Calio & Co — Inmobiliaria en Salta" },
+      { title: "Silvia Jaramillo Negocios Inmobiliarios — Inmobiliaria en Salta" },
       { name: "description", content: "Compra, venta y alquiler de propiedades en Salta. Casas, departamentos, terrenos y locales en el NOA argentino." },
-      { property: "og:title", content: "Calio & Co" },
-      { property: "og:description", content: "Propiedades seleccionadas en Salta capital y alrededores." },
+      { property: "og:title", content: "Silvia Jaramillo Negocios Inmobiliarios" },
+      { property: "og:description", content: "Propiedades seleccionadas en General Güemes y alrededores." },
     ],
   }),
   component: Home,
@@ -56,13 +56,13 @@ function Home() {
           <div className="relative grid lg:grid-cols-[1.4fr_1fr] gap-8 p-6 sm:p-10 lg:p-14 min-h-[520px]">
             <div className="flex flex-col justify-end text-white animate-fade-in">
               <p className="inline-flex items-center gap-2 self-start rounded-full bg-white/15 backdrop-blur px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-white/90">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Inmobiliaria · Salta, Argentina
+                <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Inmobiliaria · General Güemes, Salta
               </p>
               <h1 className="mt-5 font-serif text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.02]">
                 Comprá, alquilá<br />y vendé tu propiedad.
               </h1>
               <p className="mt-5 max-w-md text-base text-white/80">
-                Casas, departamentos y terrenos en Salta capital, Cerrillos, San Lorenzo y los Valles Calchaquíes.
+                Casas, departamentos y terrenos en General Güemes, Campo Santo, El Bordo y alrededores.
               </p>
               <div className="mt-7">
                 <Link to="/propiedades" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-white/90">
@@ -105,7 +105,7 @@ function Home() {
           </div>
           <div className="flex flex-col gap-5 lg:pt-3">
             <p className="text-muted-foreground text-base leading-relaxed">
-              Tu inmobiliaria de confianza en Salta. Te acompañamos durante toda la operación: desde la búsqueda y la tasación hasta la firma de escritura, con asesoramiento legal y financiero.
+              Tu inmobiliaria de confianza en General Güemes. Te acompañamos durante toda la operación: desde la búsqueda y la tasación hasta la firma de escritura, con asesoramiento legal y financiero.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link to="/propiedades" className="inline-flex items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white hover:bg-ink/85 transition">
@@ -124,7 +124,7 @@ function Home() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="font-serif text-3xl sm:text-4xl font-medium text-ink">Propiedades destacadas</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Selección curada de nuestro catálogo en Salta y alrededores.</p>
+            <p className="mt-2 text-sm text-muted-foreground">Selección curada de nuestro catálogo en General Güemes y alrededores.</p>
           </div>
           <Link to="/propiedades" className="inline-flex items-center gap-1.5 rounded-full border border-ink/20 px-4 py-2 text-sm font-medium text-ink hover:border-ink transition">
             Ver todas <ArrowUpRight className="h-3.5 w-3.5" />
@@ -168,7 +168,7 @@ function Home() {
           <div>
             <p className="text-[11px] uppercase tracking-[0.2em] text-brand">Hablemos</p>
             <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-medium leading-tight">
-              ¿Querés vender o tasar tu propiedad en Salta?
+              ¿Querés vender o tasar tu propiedad en General Güemes?
             </h2>
             <p className="mt-4 max-w-lg text-white/75 text-sm sm:text-base">
               Te respondemos en menos de 24 hs hábiles con un informe inicial sin cargo y una estrategia de comercialización.
@@ -192,7 +192,7 @@ function Home() {
 }
 
 const CITIES = [
-  { name: "Salta Capital", count: 124, img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=70" },
+  { name: "General Güemes", count: 124, img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=70" },
   { name: "San Lorenzo", count: 38, img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=70" },
   { name: "Cerrillos", count: 27, img: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=70" },
   { name: "Cafayate", count: 19, img: "https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&w=900&q=70" },
@@ -212,7 +212,7 @@ function SearchCard() {
         <Field label="Ubicación">
           <select name="q" className="w-full bg-transparent text-sm text-ink outline-none">
             <option value="">Todas las zonas</option>
-            <option>Salta Capital</option>
+            <option>General Güemes</option>
             <option>San Lorenzo</option>
             <option>Cerrillos</option>
             <option>Cafayate</option>
@@ -255,8 +255,8 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 
 function FallbackListings() {
   const demo = [
-    { name: "Casa moderna en Tres Cerritos", price: "USD 285.000", loc: "Tres Cerritos, Salta Capital", beds: 3, baths: 2, m2: 220, img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70" },
-    { name: "Departamento Centro Histórico", price: "USD 98.000", loc: "Centro, Salta Capital", beds: 2, baths: 1, m2: 78, img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70" },
+    { name: "Casa moderna en Tres Cerritos", price: "USD 285.000", loc: "Tres Cerritos, General Güemes", beds: 3, baths: 2, m2: 220, img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70" },
+    { name: "Departamento Centro Histórico", price: "USD 98.000", loc: "Centro, General Güemes", beds: 2, baths: 1, m2: 78, img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70" },
     { name: "Quinta en San Lorenzo", price: "USD 320.000", loc: "San Lorenzo", beds: 4, baths: 3, m2: 480, img: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=900&q=70" },
     { name: "Terreno en Cerrillos", price: "USD 42.000", loc: "Cerrillos", beds: 0, baths: 0, m2: 800, img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70" },
     { name: "Loft en Cafayate", price: "USD 115.000", loc: "Cafayate", beds: 1, baths: 1, m2: 65, img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=70" },

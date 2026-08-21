@@ -39,37 +39,37 @@
 }
 
 :root {
-  --radius: 1rem;
+  --radius: 0.75rem;
 
-  /* Accent — vivid orange in the spirit of the reference */
-  --brand: oklch(0.7 0.18 45);              /* ~#F26B2A */
+  /* Marca — rojo vivo sobre azul institucional y blanco */
+  --brand: oklch(0.55 0.22 27);             /* rojo */
   --brand-foreground: oklch(0.99 0 0);
-  --primary: oklch(0.18 0.01 60);           /* near-black ink for primary actions */
+  --primary: oklch(0.34 0.12 258);          /* azul institucional */
   --primary-foreground: oklch(0.99 0 0);
 
-  --background: oklch(0.995 0.002 80);      /* off-white */
-  --foreground: oklch(0.18 0.01 60);
-  --ink: oklch(0.14 0.01 60);
+  --background: oklch(1 0 0);               /* blanco */
+  --foreground: oklch(0.22 0.03 258);
+  --ink: oklch(0.24 0.07 258);
   --surface: oklch(1 0 0);
-  --surface-2: oklch(0.97 0.005 70);
+  --surface-2: oklch(0.97 0.012 255);
 
   --card: oklch(1 0 0);
   --card-foreground: var(--foreground);
   --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  --secondary: oklch(0.96 0.005 70);
-  --secondary-foreground: oklch(0.2 0.01 60);
-  --muted: oklch(0.96 0.005 70);
-  --muted-foreground: oklch(0.5 0.01 60);
-  --accent: oklch(0.96 0.02 50);
+  --secondary: oklch(0.96 0.015 255);
+  --secondary-foreground: oklch(0.32 0.1 258);
+  --muted: oklch(0.96 0.012 255);
+  --muted-foreground: oklch(0.52 0.03 258);
+  --accent: oklch(0.94 0.04 25);
   --accent-foreground: var(--ink);
 
-  --destructive: oklch(0.58 0.241 27.5);
+  --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
 
-  --border: oklch(0.91 0.005 70);
-  --input: oklch(0.91 0.005 70);
+  --border: oklch(0.9 0.015 255);
+  --input: oklch(0.9 0.015 255);
   --ring: var(--brand);
 
   --sidebar: oklch(0.99 0 0);

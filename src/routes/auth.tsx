@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { Wordmark } from "@/components/site/Wordmark";
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "Acceso — Calio & Co" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Acceso — Silvia Jaramillo Negocios Inmobiliarios" }, { name: "robots", content: "noindex" }] }),
   component: AuthPage,
 });
 
@@ -61,7 +61,7 @@ function AuthPage() {
             <h2 className="font-serif text-4xl font-medium max-w-md">Panel de administración</h2>
             <p className="mt-3 max-w-md text-white/75">Gestioná propiedades, mensajes y configuración del sitio.</p>
           </div>
-          <p className="text-xs text-white/60">© {new Date().getFullYear()} Calio & Co</p>
+          <p className="text-xs text-white/60">© {new Date().getFullYear()} Silvia Jaramillo Negocios Inmobiliarios</p>
         </div>
       </div>
       <div className="grid place-items-center p-8">

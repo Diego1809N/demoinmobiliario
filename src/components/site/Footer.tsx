@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <Wordmark />
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-            Inmobiliaria de prueba con sede en Salta capital. Casas, departamentos y terrenos en el NOA argentino.
+            Inmobiliaria de prueba con sede en General Güemes, Salta. Casas, departamentos y terrenos en el NOA argentino.
           </p>
         </div>
         <div>
@@ -24,8 +24,8 @@ export function Footer() {
           <h4 className="text-sm font-semibold text-ink">Contacto</h4>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand" />+54 387 555 0123</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" />hola@andinapropiedades.ar</li>
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5" />Av. Belgrano 842, Salta Capital</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand" />contacto@silviajaramillo.com.ar</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5" />Av. Leandro N. Alem 245, General Güemes, Salta</li>
           </ul>
         </div>
         <div>
@@ -39,7 +39,7 @@ export function Footer() {
       </div>
       <div className="border-t">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
-          <p>© {new Date().getFullYear()} Calio & Co — sitio de prueba. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Silvia Jaramillo Negocios Inmobiliarios — sitio de prueba. Todos los derechos reservados.</p>
           <Link to="/auth" className="hover:text-ink">Acceso administradores</Link>
         </div>
       </div>

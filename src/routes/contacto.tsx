@@ -11,9 +11,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto — Calio & Co" },
+      { title: "Contacto — Silvia Jaramillo Negocios Inmobiliarios" },
       { name: "description", content: "Escribinos para tasaciones, ventas, alquileres o consultas generales en Salta. Te respondemos a la brevedad." },
-      { property: "og:title", content: "Contacto — Calio & Co" },
+      { property: "og:title", content: "Contacto — Silvia Jaramillo Negocios Inmobiliarios" },
       { property: "og:description", content: "Estamos a un mensaje de distancia. Tasaciones sin cargo." },
     ],
   }),
@@ -58,8 +58,8 @@ function ContactPage() {
         <div className="space-y-4">
           <InfoCard icon={<Phone className="h-5 w-5" />} title="WhatsApp / Celular" value="+54 387 555 0123" href="tel:+543875550123" />
           <InfoCard icon={<Phone className="h-5 w-5" />} title="Teléfono fijo" value="+54 387 432 9988" href="tel:+543874329988" />
-          <InfoCard icon={<Mail className="h-5 w-5" />} title="Email" value="hola@andinapropiedades.ar" href="mailto:hola@andinapropiedades.ar" />
-          <InfoCard icon={<MapPin className="h-5 w-5" />} title="Ubicación" value="Av. Belgrano 842, Salta Capital" />
+          <InfoCard icon={<Mail className="h-5 w-5" />} title="Email" value="contacto@silviajaramillo.com.ar" href="mailto:contacto@silviajaramillo.com.ar" />
+          <InfoCard icon={<MapPin className="h-5 w-5" />} title="Ubicación" value="Av. Leandro N. Alem 245, General Güemes, Salta" />
         </div>
       </section>
       <Footer />

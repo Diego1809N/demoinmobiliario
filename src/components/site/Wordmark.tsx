@@ -11,7 +11,7 @@ export function Wordmark({ className = "", variant = "dark" }: WordmarkProps) {
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <img
         src={logoAsset.url}
-        alt="Calio & Co"
+        alt="Silvia Jaramillo Negocios Inmobiliarios"
         className="h-9 w-9 object-contain"
       />
       <span className={`font-serif text-lg font-semibold tracking-tight ${ink}`}>

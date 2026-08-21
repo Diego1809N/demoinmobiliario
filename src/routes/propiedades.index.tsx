@@ -34,9 +34,9 @@ export const Route = createFileRoute("/propiedades/")({
   },
   head: () => ({
     meta: [
-      { title: "Propiedades — Calio & Co" },
+      { title: "Propiedades — Silvia Jaramillo Negocios Inmobiliarios" },
       { name: "description", content: "Explorá casas, departamentos, terrenos y locales en venta y alquiler en Salta." },
-      { property: "og:title", content: "Propiedades en Salta — Andina" },
+      { property: "og:title", content: "Propiedades en Salta — Silvia Jaramillo" },
       { property: "og:description", content: "Filtrá por operación, tipo, ubicación y precio." },
     ],
   }),

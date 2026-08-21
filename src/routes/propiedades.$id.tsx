@@ -13,7 +13,7 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/propiedades/$id")({
   head: () => ({
     meta: [
-      { title: "Detalle de propiedad — Calio & Co" },
+      { title: "Detalle de propiedad — Silvia Jaramillo Negocios Inmobiliarios" },
       { name: "description", content: "Información completa de la propiedad: fotos, características, ubicación y precio." },
     ],
   }),
@@ -140,7 +140,7 @@ function PropertyDetail() {
               </form>
               <div className="mt-5 grid gap-2 text-sm text-muted-foreground">
                 <a href="tel:+543875550123" className="inline-flex items-center gap-2 hover:text-ink"><Phone className="h-4 w-4 text-brand" /> +54 387 555 0123</a>
-                <a href="mailto:hola@andinapropiedades.ar" className="inline-flex items-center gap-2 hover:text-ink"><Mail className="h-4 w-4 text-brand" /> hola@andinapropiedades.ar</a>
+                <a href="mailto:contacto@silviajaramillo.com.ar" className="inline-flex items-center gap-2 hover:text-ink"><Mail className="h-4 w-4 text-brand" /> contacto@silviajaramillo.com.ar</a>
               </div>
             </div>
           </aside>

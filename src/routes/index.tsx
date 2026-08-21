@@ -13,10 +13,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Calio & Co — Inmobiliaria en Salta" },
+      { title: "Silvia Jaramillo Negocios Inmobiliarios — Inmobiliaria en Salta" },
       { name: "description", content: "Compra, venta y alquiler de propiedades en Salta. Casas, departamentos, terrenos y locales en el NOA argentino." },
-      { property: "og:title", content: "Calio & Co" },
-      { property: "og:description", content: "Propiedades seleccionadas en Salta capital y alrededores." },
+      { property: "og:title", content: "Silvia Jaramillo Negocios Inmobiliarios" },
+      { property: "og:description", content: "Propiedades seleccionadas en General Güemes y alrededores." },
     ],
   }),
   component: Home,
@@ -62,7 +62,7 @@ function Home() {
                 Comprá, alquilá<br />y vendé tu propiedad.
               </h1>
               <p className="mt-5 max-w-md text-base text-white/80">
-                Casas, departamentos y terrenos en Salta capital, Cerrillos, San Lorenzo y los Valles Calchaquíes.
+                Casas, departamentos y terrenos en General Güemes, Salta, Cerrillos, San Lorenzo y los Valles Calchaquíes.
               </p>
               <div className="mt-7">
                 <Link to="/propiedades" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-white/90">
@@ -192,7 +192,7 @@ function Home() {
 }
 
 const CITIES = [
-  { name: "Salta Capital", count: 124, img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=70" },
+  { name: "General Güemes", count: 124, img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=70" },
   { name: "San Lorenzo", count: 38, img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=70" },
   { name: "Cerrillos", count: 27, img: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=70" },
   { name: "Cafayate", count: 19, img: "https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&w=900&q=70" },
@@ -212,7 +212,7 @@ function SearchCard() {
         <Field label="Ubicación">
           <select name="q" className="w-full bg-transparent text-sm text-ink outline-none">
             <option value="">Todas las zonas</option>
-            <option>Salta Capital</option>
+            <option>General Güemes</option>
             <option>San Lorenzo</option>
             <option>Cerrillos</option>
             <option>Cafayate</option>
@@ -255,8 +255,8 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 
 function FallbackListings() {
   const demo = [
-    { name: "Casa moderna en Tres Cerritos", price: "USD 285.000", loc: "Tres Cerritos, Salta Capital", beds: 3, baths: 2, m2: 220, img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70" },
-    { name: "Departamento Centro Histórico", price: "USD 98.000", loc: "Centro, Salta Capital", beds: 2, baths: 1, m2: 78, img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70" },
+    { name: "Casa moderna en Tres Cerritos", price: "USD 285.000", loc: "Tres Cerritos, General Güemes", beds: 3, baths: 2, m2: 220, img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70" },
+    { name: "Departamento Centro Histórico", price: "USD 98.000", loc: "Centro, General Güemes", beds: 2, baths: 1, m2: 78, img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70" },
     { name: "Quinta en San Lorenzo", price: "USD 320.000", loc: "San Lorenzo", beds: 4, baths: 3, m2: 480, img: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=900&q=70" },
     { name: "Terreno en Cerrillos", price: "USD 42.000", loc: "Cerrillos", beds: 0, baths: 0, m2: 800, img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70" },
     { name: "Loft en Cafayate", price: "USD 115.000", loc: "Cafayate", beds: 1, baths: 1, m2: 65, img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=70" },

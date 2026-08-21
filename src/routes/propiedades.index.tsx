@@ -70,7 +70,8 @@ function PropertiesPage() {
     },
   });
 
-  const set = (patch: Record<string, any>) => navigate({ search: (prev: any) => ({ ...prev, ...patch }) });
+  const set = (patch: Record<string, any>) =>
+    navigate({ to: "/propiedades", search: ((prev: any) => ({ ...prev, ...patch })) as any });
 
   return (
     <div className="min-h-screen flex flex-col">
